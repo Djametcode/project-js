@@ -224,6 +224,8 @@ function exit () {
 function hideSidebar () {
     const element = document.getElementById('nav2');
     element.style.visibility = 'hidden';
+    const exit = document.getElementById('exit');
+    exit.style.visibility = 'hidden';
 }
 
 function loading () {
