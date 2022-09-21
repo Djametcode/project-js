@@ -10,17 +10,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="loading()">
     <header>
         <div id="header">
             <h1 id="welcome-text">Daftar Bacaan</h1>
-            <span class="hamburger-menu"> &#9776; </span>
+            <span class="hamburger-menu" onclick="sideBar()"> &#9776; </span>
         </div>
         <div id="nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Daftar Bacaan Saya</a></li>
-                <li><a href="#">About Me</a></li>
+                <li><a href="#welcome-text" onclick="hideSidebar()">Home</a></li>
+                <li><a href="#output" onclick="hideSidebar()">Daftar Bacaan Saya</a></li>
+                <li><a href="https://instagram.com/hidayattofik_">About Me</a></li>
+            </ul>
+        </div>
+        <div id="nav2">
+            <ul class="nav2">
+                <span class="exit" id="exit" onclick="exit()">&#10005;</span>
+                <li><a href="#welcome-text" onclick="hideSidebar()" class="nav2">Home</a></li>
+                <li><a href="#output" onclick="hideSidebar()" class="nav2">Daftar Bacaan Saya</a></li>
+                <li><a href="https://instagram.com/hidayattofik_" class="nav2">About Me</a></li>
             </ul>
         </div>
     </header>

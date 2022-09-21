@@ -68,7 +68,7 @@ function makeReadingList (bookObject) {
 
     if (isComplete) {
         const checklistBtn = document.createElement('button');
-        checklistBtn.classList.add('checklist-css');
+        checklistBtn.classList.add('checklist-css2');
         checklistBtn.innerText = 'Belum selesai dibaca';
 
         checklistBtn.addEventListener('click', function() {
@@ -76,7 +76,7 @@ function makeReadingList (bookObject) {
         });
 
         const trashBtn = document.createElement('button');
-        trashBtn.classList.add('trash-css');
+        trashBtn.classList.add('trash-css2');
         trashBtn.innerText = 'Hapus Buku'
         
         trashBtn.addEventListener('click', function () {
@@ -200,5 +200,34 @@ document.addEventListener(BOOK_RENDER, function () {
             notCompleteBook.append(books);
         }
     }
-})
+});
 
+
+// side bar js
+
+function sideBar () {
+    const element = document.getElementById('nav2');
+    element.style.visibility = 'visible';
+    const exit = document.getElementById('exit');
+    exit.style.visibility = 'visible';
+
+
+}
+
+function exit () {
+    const element = document.getElementById('nav2');
+    element.style.visibility = 'hidden';
+    element.style.transition = '0.5s';
+    const exit = document.getElementById('exit');
+    exit.style.visibility = 'hidden';
+}
+function hideSidebar () {
+    const element = document.getElementById('nav2');
+    element.style.visibility = 'hidden';
+}
+
+function loading () {
+    alert('selamat datang di list baca online by Tofik Hidayat')
+    const element = document.getElementById('nav2');
+    element.style.visibility = 'hidden';
+}
