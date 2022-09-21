@@ -220,12 +220,16 @@ function exit () {
     element.style.transition = '0.5s';
     const exit = document.getElementById('exit');
     exit.style.visibility = 'hidden';
+    const header = document.getElementById('header');
+    header.style.padding = '15px';
 }
 function hideSidebar () {
     const element = document.getElementById('nav2');
     element.style.visibility = 'hidden';
     const exit = document.getElementById('exit');
     exit.style.visibility = 'hidden';
+    const header = document.getElementById('header');
+    header.style.padding = '15px';
 }
 
 function loading () {
