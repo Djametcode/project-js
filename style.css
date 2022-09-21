@@ -193,6 +193,14 @@ ul {
     #header {
         width: 100%;
     }
+    #form {
+        width: 250px;
+        height: 500px;
+    }
+    .submit-btn {
+        width: 200px;
+        transform: translateX(-45px);
+    }
     ul {
         flex-direction: column;
         position: fixed;
@@ -209,6 +217,11 @@ ul {
         align-self: center;
 
     }
+    #top {
+        width: 250px;
+        text-align: center;
+        padding: 15px;
+    }
     #left {
         margin: 0 auto;
         width: 350px;
@@ -218,7 +231,7 @@ ul {
         width: 350px;
     }
     #book-items-name1 {
-        width: 100%;
+        width: 250px;
         display: block;
     }
     #book-items-name2 {
@@ -226,7 +239,6 @@ ul {
         margin: 0;
         padding: 15px;
         display: block;
-        margin-right: 0;
     }
     .container-css {
         overflow: hidden;
